@@ -1,0 +1,49 @@
+.sidebar {
+    position: fixed;
+    right: 300px; /* To push the options sidebar next to the categories sidebar */
+    top: 0;
+    height: 100%;
+    width: 300px;
+    background-color: white;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+  
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .close-sidebar-btn {
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .symptom-list {
+    margin-bottom: 20px;
+  }
+  
+  .symptom-btn {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .symptom-btn:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  
