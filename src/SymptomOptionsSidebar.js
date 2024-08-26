@@ -21,7 +21,7 @@ const SymptomOptionsSidebar = ({ selectedCategory, handleSymptomAdd, handleBackT
         {symptomOptions[selectedCategory]?.map((symptom, index) => (
           <li key={index}>
             {symptom}
-            <button onClick={() => handleSymptomAdd(symptom)}>Add</button>
+            <button onClick={() => handleSymptomAdd(symptom)}>+</button>
           </li>
         ))}
       </ul>

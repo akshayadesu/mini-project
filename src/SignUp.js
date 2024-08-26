@@ -60,6 +60,7 @@ const SignUp = () => {
           placeholder="Age"
           value={formData.age}
           onChange={handleChange}
+          min={1}
           required
         />
         <select

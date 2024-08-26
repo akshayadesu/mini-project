@@ -47,29 +47,34 @@ const SymptomsCheck = () => {
     <div className="symptom-entry-container">
       <h2>Symptom Entry</h2>
 
-      {/* Age and Gender Inputs */}
-      <div className="form-group">
-        <label htmlFor="age">Age:</label>
-        <input
-          type="number"
-          id="age"
-          value={age}
-          onChange={(e) => setAge(e.target.value)}
-          placeholder="Enter your age"
-        />
-      </div>
+<div className="form-group-container">
+  <div className="form-group">
+    <label htmlFor="age">Age:</label>
+    <input
+      type="number"
+      id="age"
+      value={age}
+      onChange={(e) => setAge(e.target.value)}
+      placeholder="Enter your age"
+      min="1"
+    />
+  </div>
 
-      <div className="form-group">
-        <label htmlFor="gender">Gender:</label>
-        <select id="gender" value={gender} onChange={(e) => setGender(e.target.value)}>
-          <option value="">Select Gender</option>
-          <option value="Male">Male</option>
-          <option value="Female">Female</option>
-          <option value="Other">Other</option>
-        </select>
-      </div>
-
-      <button className="add-symptoms-btn" onClick={openSymptomSidebar}>
+  <div className="form-group">
+    <label htmlFor="gender">Gender:</label>
+    <select
+      id="gender"
+      value={gender}
+      onChange={(e) => setGender(e.target.value)}
+    >
+      <option value="">Select Gender</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+</div>
+ <button className="add-symptoms-btn" onClick={openSymptomSidebar}>
         Add Symptoms
       </button>
 

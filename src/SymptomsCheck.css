@@ -1,183 +1,156 @@
 /* Main Container */
 .symptom-entry-container {
-    width: 100%;
-    max-width: 600px; /* Decreased max-width */
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Heading */
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  /* Add Symptoms button */
-  .add-symptoms-btn {
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    display: block;
-    margin: 0 auto 20px auto;
-  }
-  
-  .add-symptoms-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Form Group */
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .form-group input,
-  .form-group select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  
-  /* Selected Symptoms List */
-  .selected-symptoms h3 {
-    margin-top: 20px;
-  }
-  
-  .selected-symptoms ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .selected-symptoms li {
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .selected-symptoms li button {
-    padding: 5px 10px;
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .selected-symptoms li button:hover {
-    background-color: darkred;
-  }
-  
-  /* Sidebar container */
-  .sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 250px; /* Decreased width */
-    background-color: #f1f1f1;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    overflow-y: auto;
-    z-index: 1000;
-    padding: 20px;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  /* Right Sidebar */
-  .sidebar.right {
-    right: 0;
-    transform: translateX(100%);
-  }
-  
-  .sidebar.right.open {
-    transform: translateX(0);
-  }
-  
-  /* Sidebar content styling */
-  .sidebar h3 {
-    margin-bottom: 15px;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .sidebar ul li {
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .sidebar ul li:hover {
-    background-color: #ddd;
-    padding: 5px;
-    border-radius: 4px;
-  }
-  
-  .sidebar ul li button {
-    margin-left: 10px;
-    padding: 5px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .sidebar ul li button:hover {
-    background-color: #218838;
-  }
-  
-  /* Sidebar header */
-  .sidebar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .back-btn {
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    color: black;
-  }
-  
-  .close-btn {
-    color: black;
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  /* Sidebar overlay */
-  .sidebar-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-    display: none;
-  }
-  
-  .sidebar-overlay.visible {
-    display: block;
-  }
-  
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Add Symptoms button */
+.add-symptoms-btn {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.add-symptoms-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Form Group */
+.form-group-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Selected Symptoms List */
+.selected-symptoms h3 {
+  margin-top: 20px;
+}
+
+.selected-symptoms ul {
+  list-style: none;
+  padding: 0;
+}
+
+.selected-symptoms li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selected-symptoms li button {
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.selected-symptoms li button:hover {
+  background-color: darkred;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: #f1f1f1;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  z-index: 1000;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.right {
+  right: 0;
+  transform: translateX(100%);
+}
+
+.sidebar.right.open {
+  transform: translateX(0);
+}
+
+/* Sidebar Header */
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Sidebar Overlay */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+.sidebar-overlay.visible {
+  display: block;
+}
+/* Symptom List Items */
+.sidebar ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.sidebar ul li button {
+  margin-left: 20px; /* Add space between symptom and the "+" button */
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sidebar ul li button:hover {
+  background-color: #218838;
+}
