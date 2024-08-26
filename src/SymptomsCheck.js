@@ -223,7 +223,7 @@ const SymptomsCheck = () => {
     let illness = 'Unknown Illness';
 
     if (lowerCaseSelectedSymptoms.includes('fever') && lowerCaseSelectedSymptoms.includes('cough')) {
-      illness = 'Common Cold';
+      illness = 'Flu';
     } else if (lowerCaseSelectedSymptoms.includes('headache') && lowerCaseSelectedSymptoms.includes('nausea')) {
       illness = 'Migraine';
     } else if (lowerCaseSelectedSymptoms.includes('rash') && lowerCaseSelectedSymptoms.includes('itching')) {
