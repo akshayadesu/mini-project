@@ -15,7 +15,10 @@ const IllnessPrediction = () => {
     <div className="illness-prediction-container">
       <h2>Illness Prediction Result</h2>
       {illness ? (
+        <div>
         <p className="illness-result">Based on your symptoms, the predicted illness is: <strong>{illness}</strong></p>
+        <h4>Overview of the illness:</h4>
+        </div>
       ) : (
         <p className="illness-result">No illness prediction available. Please go back and enter your symptoms.</p>
       )}

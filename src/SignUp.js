@@ -1,8 +1,10 @@
 
+import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import './SignUp.css';
 
 const SignUp = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -22,8 +24,8 @@ const SignUp = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle signup logic here
     console.log(formData);
+    navigate('/login');
   };
 
   return (
